@@ -72,7 +72,8 @@ class App extends React.Component {
             <button onClick={() => this.showCakeForm()}>Add a New Cake</button>
             <h3>Select a Cake</h3>
             {this.state.cakes ? this.state.cakes.map(cake => <Cake cake={cake} selectCake={this.setSelectedCake} key={cake.id}/>) : null}
-            <div className="main">
+          </div>
+          <div className="main">
             {/* INSTRUCTS USER TO SELECT A CAKE OR ADD A NEW CAKE  */}
             { !this.state.selected_cake && !this.state.addCake ? <h2>Please select a cake from the menu, or click "Add a New Cake".</h2>
             : null }
@@ -82,7 +83,6 @@ class App extends React.Component {
             {/* SHOWS A FORM TO ADD A NEW CAKE */}
             {this.state.addCake ?<CakeForm addCakeToList={this.addCakeToList}/>
             : null }
-            </div>
           </div>
         </div>
       <Footer/>
