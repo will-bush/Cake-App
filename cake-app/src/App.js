@@ -8,7 +8,8 @@ import API from './API'
 class App extends React.Component {
 
   state = {
-    cakes: []
+    cakes: [],
+    selected_cake: null
   }
 
   componentDidMount() {
