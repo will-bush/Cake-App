@@ -1,13 +1,15 @@
 import React from 'react';
 
 const CakeDetail = (props) => {
-    const {cake} = props;
+    const {cake, clearSelection } = props;
         return (
-            <div>
-                <img className="detail" src={cake.imageUrl} alt={cake.name}/>
-                <h3>{cake.name}</h3>
-                <p>Comment: {cake.comment}</p>
-                <p>Yum Factor: {cake.yumFactor}/5</p>
+            <div className="detail">
+                <p>You are viewing {cake.name}!</p>
+                <img className="detail-image"src={cake.imageUrl} alt={cake.name}/>
+                <h2>{cake.name}</h2>
+                <p><b>Comment:</b> {cake.comment}</p>
+                <p><b>Yum Factor:</b> {cake.yumFactor}/5</p>
+                <button className="button-red" onClick={() => clearSelection()}>Return to Menu</button>
             </div>
         )
     }
