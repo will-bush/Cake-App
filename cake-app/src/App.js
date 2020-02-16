@@ -31,7 +31,7 @@ class App extends React.Component {
         <div className="main-container">
           <div className="cakes">
             <h3>Select a Cake</h3>
-            {this.state.cakes ? this.state.cakes.map(cake => <Cake key={cake.id}/>) : null}
+            {this.state.cakes ? this.state.cakes.map(cake => <Cake cake={cake} key={cake.id}/>) : null}
           </div>
         </div>
       <Footer/>
