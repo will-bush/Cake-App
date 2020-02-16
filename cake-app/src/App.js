@@ -4,13 +4,15 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Cake from './Components/Cake';
 import CakeDetail from './Components/CakeDetail'
+import CakeForm from './Components/CakeForm'
 import API from './API'
 
 class App extends React.Component {
 
   state = {
     cakes: [],
-    selected_cake: null
+    selected_cake: null,
+    addCake: false
   }
 
   componentDidMount() {
@@ -39,6 +41,17 @@ class App extends React.Component {
       addCake: true
     })
     this.clearSelection();
+  }
+
+  // TAKES THE RESPONSE FROM A NEW CAKE POST REQUEST
+  // AND ADDS THE NEW CAKE TO THE ARRAY OF CAKES HELD IN STATE
+  addCakeToList = (newCake) => {
+    this.setState({
+      cakes: [...this.state.cakes, newCake],
+      selected_cake: newCake,
+      addCake: false
+    })
+
   }
 
   // REMOVES A SINGLE CAKE FROM BEING "SELECTED" IN STATE
