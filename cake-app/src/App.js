@@ -4,13 +4,15 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import API from './API'
 
-function App() {
+class App extends React.Component {
+  render() {
+  
   return (
     <div className="App">
       <Header title="Cake App"/>
       <Footer/>
     </div>
   );
-}
+}};
 
 export default App;
