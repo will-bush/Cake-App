@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c493a3fda8128a573fe098d9a422cdd5",
+    "revision": "52222a17c2c6dcbd2eac38bfc7ac5453",
     "url": "/Cake-App/index.html"
   },
   {
