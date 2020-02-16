@@ -69,7 +69,7 @@ class App extends React.Component {
         <div className="main-container">
           <div className="cakes">
             {/* BUTTON ALLOWS USER TO ADD A NEW CAKE */}
-            <button onClick={() => this.showCakeForm()}>Add a New Cake</button>
+            <button className="button-green" onClick={() => this.showCakeForm()}>Add a New Cake</button>
             <h3>Select a Cake</h3>
             {this.state.cakes ? this.state.cakes.map(cake => <Cake cake={cake} selectCake={this.setSelectedCake} key={cake.id}/>) : null}
           </div>
