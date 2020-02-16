@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb039d4cafc1388898e51981c1165a80",
+    "revision": "c493a3fda8128a573fe098d9a422cdd5",
     "url": "/Cake-App/index.html"
   },
   {
-    "revision": "845867d4fbbd0a57af35",
+    "revision": "535ec5709c6e4b4049d6",
     "url": "/Cake-App/static/css/main.c34d872c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Cake-App/static/js/2.373c2e20.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "845867d4fbbd0a57af35",
-    "url": "/Cake-App/static/js/main.251b27b7.chunk.js"
+    "revision": "535ec5709c6e4b4049d6",
+    "url": "/Cake-App/static/js/main.ef864343.chunk.js"
   },
   {
     "revision": "ba3e80d348c4c51c3ffb",
