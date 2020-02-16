@@ -10,6 +10,17 @@ class App extends React.Component {
     cakes: []
   }
 
+  componentDidMount() {
+    API.getCakes()
+    .then((cakes) => this.setCakes(cakes))
+  }
+
+  // SETS AN ARRAY OF CAKES IN STATE
+  setCakes = data => {
+    this.setState({
+      cakes: data
+    })
+  }
 
   render() {
   
