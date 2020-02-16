@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import Cake from './Components/Cake';
 import API from './API'
 
 class App extends React.Component {
@@ -27,6 +28,12 @@ class App extends React.Component {
   return (
     <div className="App">
       <Header title="Cake App"/>
+        <div className="main-container">
+          <div className="cakes">
+            <h3>Select a Cake</h3>
+            {this.state.cakes ? this.state.cakes.map(cake => <Cake key={cake.id}/>) : null}
+          </div>
+        </div>
       <Footer/>
     </div>
   );
