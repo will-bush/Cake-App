@@ -23,6 +23,14 @@ class App extends React.Component {
     })
   }
 
+   // SETS A SINGLE CAKE AS BEING "SELECTED" IN STATE
+   setSelectedCake = cake => {
+    this.setState({
+      selected_cake: cake,
+      addCake: false
+    })
+  }
+
   render() {
   
   return (
@@ -31,7 +39,7 @@ class App extends React.Component {
         <div className="main-container">
           <div className="cakes">
             <h3>Select a Cake</h3>
-            {this.state.cakes ? this.state.cakes.map(cake => <Cake cake={cake} key={cake.id}/>) : null}
+            {this.state.cakes ? this.state.cakes.map(cake => <Cake cake={cake} selectCake={this.setSelectedCake} key={cake.id}/>) : null}
           </div>
         </div>
       <Footer/>
