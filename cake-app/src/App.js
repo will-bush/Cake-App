@@ -5,6 +5,12 @@ import Footer from './Components/Footer';
 import API from './API'
 
 class App extends React.Component {
+
+  state = {
+    cakes: []
+  }
+
+
   render() {
   
   return (
